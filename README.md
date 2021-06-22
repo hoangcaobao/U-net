@@ -25,7 +25,7 @@ The mindset of U-net model is simple. Just like you dealing with classify dog an
 
 ### Training
 
-U-net only take 3 epochs to get nearly 95%, but it will take a lot of time to train because we are dealing with image dataset.
+U-net only take 3 epochs to get nearly 98%, but it will take a lot of time to train because we are dealing with image dataset.
 
 ### Performance
 
