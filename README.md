@@ -9,6 +9,7 @@ The architecture was created by [U-Net: Convolutional Networks for Biomedical Im
 ## Overview
 
 ### Dataset
+I can not upload all dataset because it is private. You can find or use your own.
 
 My dataset contain 2 types: X-ray image and its knee position as label. Here is an example of my dataset:
 
