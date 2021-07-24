@@ -12,7 +12,8 @@ data_gen_args = dict(rotation_range=0.3,
                     horizontal_flip=True,
                     validation_split=0.2,
                     fill_mode='nearest')
-
+if not os.path.exists("data/aug"):
+  os.mkdir("data/aug")
 train_image_generator = generate_data_train(train_path="data",data_folder="image",data_type="image",aug_dict=data_gen_args, save_to_dir="data/aug", seed=seed)
 train_mask_generator=generate_data_train(train_path="data",data_folder="label", data_type="mask",aug_dict=data_gen_args, save_to_dir="data/aug", seed=seed)
 train=zip_data(train_image_generator,train_mask_generator)
