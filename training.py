@@ -21,6 +21,6 @@ valid_mask_generator = generate_data_valid(train_path="data",data_folder="label"
 valid=zip_data(valid_image_generator,valid_mask_generator)    
 
 model=unet('unet_weights.hdf5')
-model_checkpoint=ModelCheckpoint('unet_weights.hdf5', monitor='loss', verbose=1, save_best_only=True)
+model_checkpoint=ModelCheckpoint('unet_weights.hdf5', monitor='val_loss', verbose=1, save_best_only=True)
 model.fit_generator(train, validation_data=valid, validation_steps=valid_image_generator.samples//32, steps_per_epoch=train_image_generator.samples//32, epochs=50, callbacks=[model_checkpoint])
 
