@@ -22,7 +22,7 @@ X-ray image            |  Label
 
 ![](image/u-net-architecture.png)
 
-The mindset of U-net model is simple. Just like you dealing with classify dog and cat images, the output of model doing this task will be one number (the probability of cats and dogs). Now the output of U-net is 256 * 256 (the size of image) number.
+The idea of U-net model is simple. Just like you dealing with classify dog and cat images, the output of model doing this task will be one number (the probability of cats and dogs). Now the output of U-net is 256 * 256 (the size of image) number.
 
 ### Training
 
